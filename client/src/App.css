@@ -1,0 +1,42 @@
+.login-bg-img{
+    background-image: url('components/images/cashier.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.flex-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.item{
+    width: fit-content;
+    height: fit-content;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-aqua{
+    background-color: aqua;
+}
+p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #2F4165;
+}
+.bold{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+}
