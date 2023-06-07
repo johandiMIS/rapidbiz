@@ -3,7 +3,7 @@ import {Grid} from '@mui/material'
 import logo_text from '../images/logo_text.svg'
 import {Field, Formik, Form} from 'formik'
 import {Link} from 'react-router-dom'
-const Login = () => {
+const ForgetPassword = () => {
   return (
     <Grid container component="main" sx={{ height: '100vh', width:"100vw"}}>
         <Grid
@@ -23,17 +23,18 @@ const Login = () => {
                         onSubmit={()=>{console.log("submit")}}
                       >
                         <Form className='flex-container'>
-                          <p className='text-secondary'>Email</p>
-                          <Field className="login-text-field secondary" name="email" type="email"/>
-                          <p className='text-primary'>Email error</p>
-                          <br/>
-                          <p className='text-secondary'>Password</p>
-                          <Field className="login-text-field secondary" name="password" type="password"/>
-                          <p className='text-primary'>Password error</p>
-                          <br/>
-                          <div className='flex-container flex-row' style={{alignItems:"center", gap:"2rem"}}>
-                            <button className='login-btn primary' type="submit">Login</button> 
-                            <Link to={"/forgetpassword"}>Forget Password?</Link>
+                            <br/>
+                            <p className='text-secondary'>Email</p>
+                            <Field className="login-text-field secondary" name="email" type="email"/>
+                            <p className='text-primary'>Password error</p>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <div className='flex-container flex-row' style={{alignItems:"center", gap:"2rem"}}>
+                            <button className='login-btn primary' type="submit">Reset</button> 
+                            <Link to={"/login"}>Back to login</Link>
                           </div>
                         </Form>
                       </Formik>
@@ -50,4 +51,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default ForgetPassword
