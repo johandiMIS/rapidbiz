@@ -1,3 +1,36 @@
+.account-btn{
+    outline: none;
+    border: 1px solid #F04832 !important;
+    border-radius: 2rem !important;
+
+    height: 2.5rem !important;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-size: 1rem !important;
+    margin: 0px 0px;
+    padding-left: 0.25rem !important   ;
+
+    text-transform: none !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.home{
+    background-image: url('components/images/home_bg.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.home-menu{
+    height: 10rem;
+    background-color: white;
+    border-radius: 2rem;
+    /* padding: 1rem; */
+    box-shadow: 0px 4px 50px rgba(189, 209, 254, 0.3);
+}
 .login-bg-img{
     background-image: url('components/images/cashier.svg');
     background-repeat: no-repeat;
@@ -45,11 +78,20 @@
 }
 
 .flex-container{
-    display: flex;
+    display: flex !important;
     height: 100%;
     width: 100%;
     flex-direction: column;
     gap: 0.5rem;
+}
+.flex-align{
+    align-items:center;
+}
+.gap-1{
+    gap:1rem;
+}
+.gap-2{
+    gap:2rem;
 }
 .item{
     width: fit-content;
@@ -58,8 +100,14 @@
 .flex-row{
     flex-direction: row;
 }
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
 .flex-column{
-    flex-direction: column;
+    flex-direction: column !important;
+}
+.flex-column-reverse{
+    flex-direction: column-reverse;
 }
 .flex-center{
     align-items: center;
