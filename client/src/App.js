@@ -6,6 +6,7 @@ import '@fontsource/roboto/300.css';
 import ForgetPassword from './components/auth/ForgetPassword';
 import Home from './components/pages/Home';
 import { ThemeProvider, createTheme } from '@mui/material';
+import Warehouse from './components/warehouse/Warehouse';
 
 const theme = createTheme({
   palette: {
@@ -28,6 +29,7 @@ function App() {
             <Route path='/login' element={<Login/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/forgetpassword' element={<ForgetPassword/>}/>
+            <Route path='/warehouse' element={<Warehouse/>}/>
           </Routes>
         </div>
       </ThemeProvider>
