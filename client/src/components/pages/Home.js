@@ -109,7 +109,7 @@ const Home = () => {
                         >
                             <Link to="/" style={{textDecoration:"none"}}>
                                 <div className='home-menu flex-container flex-column-reverse flex-align' > 
-                                    <h3 className='item text-secondary' style={{paddingBottom:"1rem"}}> Dashboard </h3>
+                                    <h3 className='item text-secondary' style={{paddingBottom:"1rem"}}> Schedule </h3>
                                     <img alt='menu' src={schedule_menu}/>
                                 </div>
                             </Link>

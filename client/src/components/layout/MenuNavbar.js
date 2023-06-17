@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom'
 const MenuNavbar = () => {
   return (
     <div className='flex-container flex-row flex-align' style={{justifyContent:"space-between"}}>
-      {/* <h1 className='text-secondary' style={{paddingLeft:'2rem'}}>Employee</h1> */}
       <Link to="/">
         <img alt='#' style={{height:"3rem"}} src={logo_text}></img>
       </Link>
