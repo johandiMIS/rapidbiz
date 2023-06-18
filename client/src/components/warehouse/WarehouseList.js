@@ -1,6 +1,7 @@
 import React, { Fragment} from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { Button} from "@mui/material";
+import {Link} from 'react-router-dom'
 
 const WarehouseList = () => {
   const columns = [
@@ -32,7 +33,7 @@ const WarehouseList = () => {
         const onClick = () => {
           console.log(params);
         };
-        return <Button onClick={onClick}>Details</Button>;
+        return <Button onClick={onClick}><Link to={`/warehouse/${params.id}`}>Details</Link></Button>;
       },
     },
   ];

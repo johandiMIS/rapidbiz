@@ -7,6 +7,7 @@ import ForgetPassword from './components/auth/ForgetPassword';
 import Home from './components/pages/Home';
 import { ThemeProvider, createTheme } from '@mui/material';
 import Warehouse from './components/warehouse/Warehouse';
+import WarehouseDetail from './components/warehouse/WarehouseDetail';
 
 const theme = createTheme({
   palette: {
@@ -30,6 +31,7 @@ function App() {
             <Route path='/register' element={<Register/>}/>
             <Route path='/forgetpassword' element={<ForgetPassword/>}/>
             <Route path='/warehouse' element={<Warehouse/>}/>
+            <Route path='/warehouse/:id' element={<WarehouseDetail/>}/>
           </Routes>
         </div>
       </ThemeProvider>
