@@ -1,5 +1,3 @@
-"# rapidbiz" 
-
 to generate .env file
 
 npx dotenvenc -e .\.env <Password>  => to encrypt env file .env to .env.enc
